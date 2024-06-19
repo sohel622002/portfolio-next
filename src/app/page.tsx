@@ -7,8 +7,8 @@ export default function Home() {
   return (
     <>
       <section className="flex max-w-screen-lg mx-auto my-12 p-5 gap-5">
-        <div className="flex-[0.7]">
-          <h1 className="text-3xl font-bold">
+        <div className="sm:flex-[0.7]">
+          <h1 className="sm:text-3xl text-2xl font-bold">
             Hello! I am Sohel, a web developer living in Ahmedabad.
           </h1>
           <div className="space-y-3 mt-5 text-slate-500 font-semibold">
@@ -43,7 +43,7 @@ export default function Home() {
             </Link>
           </div>
         </div>
-        <div className="flex-[0.3]">
+        <div className="sm:flex-[0.3] sm:block hidden">
           <Image
             src={"/prfile.jpg"}
             alt="profile image"
@@ -55,7 +55,7 @@ export default function Home() {
       </section>
       <section className="max-w-screen-lg mx-auto my-12 p-5">
         <h2 className="text-2xl font-bold mb-1">Tech i know</h2>
-        <div className="flex gap-5 mt-5">
+        <div className="flex gap-5 mt-5 flex-wrap">
           {TECHSTACK.map((tech) => (
             <Image
               key={tech}

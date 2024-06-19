@@ -1,7 +1,18 @@
+import { getProjects } from "@/utils/getProjects";
 import Image from "next/image";
 import Link from "next/link";
 
-export default function Project({ data }: { data: any }) {
+export default async function Projects() {
+  const projects = await getProjects();
+  return (
+    <div className="grid sm:grid-cols-2 mt-7 gap-12">
+      {projects && projects.map((project) => <Project data={project} />)}
+      {projects && projects.map((project) => <Project data={project} />)}
+    </div>
+  );
+}
+
+function Project({ data }: { data: any }) {
   return (
     <div className="space-y-2">
       <Image

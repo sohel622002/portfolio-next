@@ -9,7 +9,7 @@ export default function Header() {
 
   return (
     <header className="max-w-screen-lg mx-auto p-5 flex items-center justify-between">
-      <h2 className="text-xl font-bold">
+      <h2 className="sm:text-xl text-lg font-bold">
         <Link href={"/"}>SOHEL.DEV</Link>
       </h2>
       <nav className="space-x-10 font-bold">
