@@ -28,13 +28,15 @@ export default function Home() {
           </div>
           <div className="space-x-4 mt-7">
             <Link
-              href={"/"}
+              href={"https://www.linkedin.com/in/sohelshaikh0602/"}
+              target="_blank"
               className="bg-slate-900 text-slate-200 px-5 py-3 rounded-sm text-sm font-semibold inline-block"
             >
               View Linkedin
             </Link>
             <Link
-              href={"/"}
+              href={"https://github.com/sohel622002"}
+              target="_blank"
               className="border-2 border-slate-900 text-slate-900 px-5 py-3 rounded-sm text-sm font-semibold inline-block"
             >
               View Github
@@ -75,11 +77,19 @@ export default function Home() {
           to reach me at{" "}
           <span className="text-rose-600">sohelshaikh01231@gmail.com</span>. You
           can also find me on{" "}
-          <Link href={"/"} className="text-rose-600">
+          <Link
+            href={"https://github.com/sohel622002"}
+            target="_blank"
+            className="text-rose-600"
+          >
             Github
           </Link>{" "}
           and{" "}
-          <Link href={"/"} className="text-rose-600">
+          <Link
+            href={"https://www.linkedin.com/in/sohelshaikh0602/"}
+            target="_blank"
+            className="text-rose-600"
+          >
             Linkdin
           </Link>
           . Or you can drop me a message from{" "}

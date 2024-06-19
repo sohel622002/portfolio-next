@@ -1,8 +1,9 @@
-import Image from "next/image";
 import Link from "next/link";
 import Project from "./Project";
+import { getProjects } from "@/utils/getProjects";
 
-export default function ProjectSection() {
+export default async function ProjectSection() {
+  const projects = await getProjects();
   return (
     <section className="max-w-screen-lg mx-auto my-12 p-5 gap-5">
       <div className="flex justify-between">
@@ -17,9 +18,7 @@ export default function ProjectSection() {
         </Link>
       </div>
       <div className="grid grid-cols-2 mt-7 gap-12">
-        <Project />
-        <Project />
-        <Project />
+        {projects && projects.map((project) => <Project data={project} />)}
       </div>
     </section>
   );
